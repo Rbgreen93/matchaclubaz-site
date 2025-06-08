@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matcha Club AZ</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: #5cdb95;
+      color: #05386b;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #8ee4af;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #05386b;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    .menu-section, .location-section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #05386b;
+    }
+    .menu-item {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .menu-item h3 {
+      margin: 0;
+      color: #5cdb95;
+    }
+    .menu-item p {
+      margin: 5px 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Matcha Club AZ</h1>
+    <p>Your destination for premium matcha delights</p>
+  </header>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#location">Location</a>
+  </nav>
+  <main>
+    <!-- Menu Section: Edit these food items as needed -->
+    <section id="menu" class="menu-section">
+      <h2>Our Menu</h2>
+      <div id="menu-items">
+        <!-- Menu items will be injected here by JavaScript -->
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+      <h2>Our Location</h2>
+      <p>Find us at 123 Matcha Lane, Phoenix, AZ</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.608071857493!2d-112.05832068425952!3d33.44837628077614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b918b1e6b1c43%3A0x19c2d301d2ef5b2!2sPhoenix%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sin!4v1616173461082!5m2!1sen!2sin" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </section>
+  </main>
+  <script>
+    // Editable Menu Items: Update this array with your food items.
+    const menuItems = [
+      {
+        name: "Classic Matcha Latte",
+        description: "A creamy blend of premium matcha and steamed milk.",
+        price: "$4.95"
+      },
+      {
+        name: "Iced Matcha Frappe",
+        description: "Refreshing iced matcha blended with a hint of sweetness.",
+        price: "$5.45"
+      },
+      {
+        name: "Matcha Smoothie",
+        description: "A healthy blend of matcha with fresh fruits.",
+        price: "$6.25"
+      },
+      {
+        name: "Matcha Bliss Bowl",
+        description: "Nutritious bowl topped with matcha-infused granola and seasonal fruits.",
+        price: "$7.00"
+      }
+    ];
+
+    const menuContainer = document.getElementById("menu-items");
+
+    // Dynamically populate the menu section with items
+    menuItems.forEach(item => {
+      const div = document.createElement("div");
+      div.className = "menu-item";
+      div.innerHTML = `
+        <h3>${item.name} <span style="float:right;">${item.price}</span></h3>
+        <p>${item.description}</p>
+      `;
+      menuContainer.appendChild(div);
+    });
+  </script>
+</body>
+</html>
