@@ -79,19 +79,10 @@
     <a href="about.html">About Us</a>
   </nav>
   <main>
-    <!-- Menu Section: Edit these food items as needed -->
+     <!-- Menu Section with JPEG replacing menu items -->
     <section id="menu" class="menu-section">
-      <h2>Our Menu</h2>
-      <div id="menu-items">
-        <!-- Menu items will be injected here by JavaScript -->
-      </div>
-    </section>
-    <!-- Centered List Underneath the Menu -->
-    <div id="extra-content">
-    <ul class="centered-list">
-       <li>add cold foam +1</li>
-       <li>milk options: whole, oat, coconut</li>
-    </ul>
+         <div id="menu-items">
+        <img src="Menu 6.22.25.png" alt="Our Menu">
   </div>
 </section>
     <!-- Location Section -->
@@ -101,41 +92,6 @@
     </section>
   </main>
   <script>
-    // Editable Menu Items: Update this array with your food items.
-    const menuItems = [
-      {
-        name: "Matcha Latte",
-        description: "A blend of premium matcha tea and steamed milk.",
-        price: "7"
-      },
-      {
-        name: "Strawberry Matcha",
-        description: "A Blend of premium matcha and fresh strawberry puree.",
-        price: "7"
-      },
-      {
-        name: "Mango Matcha",
-        description: "A Blend of premium matcha and fresh strawberry puree.",
-        price: "7"
-      },
-      {
-        name: "Black Sesame Matcha",
-        description: "Premium matcha latte with a black sesame cold foam.",
-        price: "7"
-      },
-        {
-        name: "Ube Matcha",
-        description: "Ube matcha latte with ube cold foam.",
-        price: "7"
-      },
-      {
-        name: "Banana Split",
-        description: "Banana milk matcha latte with a banana cold foam.",
-        price: "7"
-      },
-    ];
-    const menuContainer = document.getElementById("menu-items");
-
     // Dynamically populate the menu section with items
     menuItems.forEach(item => {
       const div = document.createElement("div");
