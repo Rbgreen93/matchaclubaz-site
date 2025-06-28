@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar - Matcha Club AZ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: #9CAF88;
+      color: #030302;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #9CAF88;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #030302;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+    }
+    h2 {
+      color: #030302;
+      text-align: center;
+    }
+    .calendar-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Matcha Club AZ Logo" style="width:200px; height:auto;">
+    <p>Your destination for premium matcha creations</p>
+  </header>
+  <nav>
+    <a href="index.html">Menu</a>
+    <a href="store.html">Store</a>
+    <a href="about.html">About Us</a>
+    <a href="calendar.html">Calendar</a>
+  </nav>
+  <main>
+    <h2>Upcoming Events</h2>
+    <div class="calendar-container">
+      <!-- Replace the src below with your actual Google Calendar embed link -->
+      <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=America%2FPhoenix"
+        frameborder="0" scrolling="no"></iframe>
+    </div>
+  </main>
+</body>
+</html>
