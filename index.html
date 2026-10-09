@@ -2,157 +2,213 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matcha Club AZ | Premium Matcha Creations</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matcha Club AZ</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: #9CAF88;
+      color: #030302;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #9CAF88;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #030302;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    .menu-section, .About Us-section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #030302;
+    }
+/* Wrapper container for consistent alignment */
+  .wrapper {
+    max-width: 320px;  /* Adjust this as needed */
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  /* Style for the menu image */
+  #menu-items img {
+    width: 100%;         /* Makes the image responsive within its container */
+    max-width: 300px;     /* Ensures the image isn’t too large */
+    display: block;
+    margin: 0 auto;
+  }
+   /* Other global styles */
+    .centered-list {
+      list-style: none; /* Remove bullet points */
+      padding: 0;
+      margin: 20px auto; /* Centers the list */
+      text-align: center;
+      max-width: 400px; /* Optional: controls the width of the list */
+    }
+    /* CSS for your contact us button without bullet points */
+    .contact-us-ul {
+      list-style: none; /* Removes bullet points */
+      padding: 0;
+      margin: 0;
+    }
+  </style>
 </head>
-<body class="page">
+<body>
   <header>
-    <div class="container nav">
-      <div class="nav-left">
-        <div class="nav-logo">M</div>
-        <div class="nav-brand">
-          <span class="nav-brand-title">Matcha Club AZ</span>
-          <span class="nav-brand-subtitle">Premium matcha bar & mobile studio</span>
-        </div>
-      </div>
-      <nav class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="calendar.html">Calendar</a>
-        <a href="store.html">Store</a>
-        <a href="about.html">About</a>
-      </nav>
-    </div>
+   <div class="wrapper">   
+    <img src='logo.png' alt="Matcha Club AZ Logo" style="width:200px; height:auto;">
+    <p>Your destination for premium matcha creations</p>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TE5GY8P6XN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TE5GY8P6XN');
+</script>
+  </div>
   </header>
-
+  <nav>
+     <div class="wrapper">
+    <a href="#menu">Menu</a>
+    <a href="calendar.html">Calendar</a>  
+    <a href="store.html">Store</a>
+    <a href="about.html">About Us</a>
+ </div>
+  </nav>
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="hero-tag">
-            <span>Gilbert, AZ</span>
-            <span>Small-batch matcha</span>
-          </div>
-          <h1 class="hero-title">
-            Your destination for
-            <span class="hero-highlight">premium matcha creations</span>
-          </h1>
-          <p class="hero-text">
-            Matcha Club AZ brings a modern matcha bar experience to studios, events, and pop-ups
-            across the East Valley—serving thoughtfully crafted drinks with high-quality Japanese
-            matcha.
-          </p>
-          <div class="hero-actions">
-            <a href="store.html" class="btn btn-primary">Order online</a>
-            <a href="calendar.html" class="btn btn-outline">See upcoming events</a>
-          </div>
-        </div>
-
-        <aside class="hero-card">
-          <div class="hero-card-header">
-            <div>
-              <div class="hero-card-title">Book us for your studio or next event</div>
-              <div class="hero-card-body">
-                Pop-up matcha bar for yoga studios, corporate events, and private gatherings.
-              </div>
-            </div>
-            <span class="hero-card-pill">Now booking</span>
-          </div>
-          <div class="hero-card-footer">
-            <span>Custom menus • On-site service • Flexible scheduling</span>
-            <a href="about.html" class="btn btn-outline" style="font-size: 0.75rem;">Learn more</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">What we serve</h2>
-          <p class="section-subtitle">
-            Thoughtfully curated matcha drinks with simple, quality ingredients.
-          </p>
-        </div>
-
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-label">Signature</div>
-            <h3 class="card-title">Classic Ceremonial Matcha</h3>
-            <p class="card-text">
-              Straight, whisked ceremonial-grade matcha—smooth, vibrant, and balanced. Perfect for
-              purists and first-timers alike.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-label">House favorite</div>
-            <h3 class="card-title">Iced Vanilla Matcha Latte</h3>
-            <p class="card-text">
-              Creamy, lightly sweet, and refreshing. Made with premium matcha and simple vanilla
-              syrup.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-label">Seasonal</div>
-            <h3 class="card-title">Rotating Specials</h3>
-            <p class="card-text">
-              Limited-time drinks inspired by the season—check our menu and calendar for what’s
-              pouring now.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Where to find us</h2>
-          <p class="section-subtitle">
-            Pop-ups, studio residencies, and special events around Gilbert and the East Valley.
-          </p>
-        </div>
-
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-label">Calendar</div>
-            <h3 class="card-title">Upcoming events</h3>
-            <p class="card-text">
-              View our live calendar for studio residencies, weekend pop-ups, and special
-              collaborations.
-            </p>
-            <a href="calendar.html" class="btn btn-outline" style="margin-top: 0.7rem;">Open calendar</a>
-          </article>
-
-          <article class="card">
-            <div class="card-label">Booking</div>
-            <h3 class="card-title">Host Matcha Club AZ</h3>
-            <p class="card-text">
-              Interested in bringing a matcha bar to your studio or event? Reach out and we’ll
-              build a custom experience.
-            </p>
-            <a href="about.html" class="btn btn-outline" style="margin-top: 0.7rem;">Booking details</a>
-          </article>
-        </div>
-      </div>
+    <div class="wrapper">
+     <!-- Menu Section with JPEG replacing menu items -->
+    <section id="menu" class="menu-section">
+         <div id="menu-items">
+        <img src="Menu 4.24.26.png" alt="Our Menu"style="width:1000px; height:auto; display:block; margin:0 auto;">
+  </div>
+</section>
+    <!-- Location Section -->
+    <section id="Booking" class="location-section">
+      <h2>Book us for your studio or next event</h2>
+</section>
     </section>
   </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <span>© Matcha Club AZ · Gilbert, Arizona</span>
-      <div class="footer-links">
-        <a href="calendar.html">Calendar</a>
-        <a href="store.html">Store</a>
-        <a href="about.html">Contact</a>
-      </div>
-    </div>
-  </footer>
+  <script>
+    // Dynamically populate the menu section with items
+    menuItems.forEach(item => {
+      const div = document.createElement("div");
+      div.className = "menu-item";
+      div.innerHTML = `
+        <h3>${item.name} <span style="float:right;">${item.price}</span></h3>
+        <p>${item.description}</p>
+      `;
+      menuContainer.appendChild(div);
+    });
+  </script>
 </body>
 </html>
+<!-- // Change Location to Contact Us -->
+<nav>
+  <ul class="contact-us-ul">
+    <li><a href="#" id="contactLink">Contact Us</a></li>
+  </ul>
+</nav>
+<!-- //Dialog box for sending an email -->
+<!-- Contact Modal Dialog -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Contact Us</h2>
+    <!-- Form using mailto to try to send email to matchaclub.az@gmail.com -->
+    <form action="mailto:matchaclub.az@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+<style>
+  /* Modal container */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); /* semi-transparent background */
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* centers the modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+</style>
+<script>
+  // Get the modal and the trigger link
+  const modal = document.getElementById("contactModal");
+  const contactLink = document.getElementById("contactLink");
+  const closeBtn = document.querySelector(".modal .close");
+
+  // Open modal when contact link is clicked
+  contactLink.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default navigation
+    modal.style.display = "block";
+  });
+
+  // Close the modal when user clicks on the close button
+  closeBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+
+  // Also close the modal if user clicks outside its content
+  window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
 
 
 
